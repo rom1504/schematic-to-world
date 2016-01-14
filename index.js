@@ -30,7 +30,7 @@ World.prototype.initialize=function(iniFunc,length,width,height,iniPos) {
         const offsetX=chunkX*16;
         const offsetZ=chunkZ*16;
         chunk.initialize((x,y,z) => iniFunc(x+offsetX,y,z+offsetZ),Math.min(16,length-offsetZ),Math.min(16,width-offsetX),height,iniPos.x%16,iniPos.y,iniPos.z%16);
-        return this.setColumn(actualChunkX,actualChunkZ);
+        return this.setColumn(actualChunkX,actualChunkZ,chunk);
       }));
     }
   }
@@ -40,7 +40,7 @@ World.prototype.initialize=function(iniFunc,length,width,height,iniPos) {
 function addSchematicToWorld(data,world,iniPos) {
   return schematicParseAsync(data)
     .then(schem => {
-      world.initialize((x, y, z) => {
+      return world.initialize((x, y, z) => {
         var block = schem.getBlock(x, y, z);
         return block.type & 0xff;
       }, schem.length, schem.width, schem.height,iniPos)
