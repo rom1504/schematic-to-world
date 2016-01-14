@@ -1,0 +1,18 @@
+{
+  "name": "schematic-to-world",
+  "version": "0.0.0",
+  "description": "Load a minecraft schematic into prismarine world",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Romain Beaumont <romain.rom1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mc-schematic": "^1.0.0",
+    "node-promise-es6": "^0.3.0",
+    "prismarine-chunk": "^0.2.1",
+    "prismarine-world": "^0.4.0",
+    "vec3": "^0.1.3"
+  }
+}
