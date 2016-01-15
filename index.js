@@ -13,7 +13,8 @@ Chunk.prototype.initialize=function(iniFunc,length,width,height,iniPosX,iniPosY,
   for(let y=0;y<height;y++) {
     for(let z=0;z<length;z++) {
       for(let x=0;x<width;x++,n++) {
-        this.data.writeUInt16LE(iniFunc(x,y,z)<<4,n*2)
+        const block=iniFunc(x,y,z);
+        this.data.writeUInt16LE(block.type<<4 | block.metadata,n*2)
       }
     }
   }
@@ -42,7 +43,8 @@ function addSchematicToWorld(data,world,iniPos) {
     .then(schem => {
       return world.initialize((x, y, z) => {
         var block = schem.getBlock(x, y, z);
-        return block.type & 0xff;
+        block.type=block.type & 0xff;
+        return block;
       }, schem.length, schem.width, schem.height,iniPos)
     });
 }
