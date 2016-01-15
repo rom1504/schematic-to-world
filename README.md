@@ -4,6 +4,10 @@ Load a minecraft schematic into prismarine world
 
 ## History
 
+### 0.2.1
+
+* define skyLight to 15
+
 ### 0.2.0
 
 * move initialize to prismarine-chunk and prismarine-world
