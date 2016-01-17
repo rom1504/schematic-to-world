@@ -13,7 +13,7 @@ if(process.argv.length !=3) {
 
 var world=new World(()=>new Chunk());
 
-return fs.readFile(process.argv[2])
+fs.readFile(process.argv[2])
   .then(data => addSchematicToWorld(data,world,new Vec3(50,0,0)))
   .then(() => world.getBlockType(new Vec3(4*16+50,0,5*16)))
   .then((type) => console.log(type))
