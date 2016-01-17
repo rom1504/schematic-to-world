@@ -10,7 +10,6 @@ function addSchematicToWorld(data,world,iniPos) {
     .then(schem => {
       return world.initialize((x, y, z) => {
         var block = schem.getBlock(x, y, z);
-        block.type=block.type & 0xff;
         block.skyLight=15;
         return block;
       }, schem.length, schem.width, schem.height,iniPos)

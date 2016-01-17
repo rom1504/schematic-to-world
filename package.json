@@ -13,7 +13,7 @@
   "author": "Romain Beaumont <romain.rom1@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "mc-schematic": "^1.0.0",
+    "mc-schematic": "git://github.com/rom1504/schematic.git#fixes",
     "node-promise-es6": "^0.3.0",
     "prismarine-chunk": "^0.3.2",
     "prismarine-world": "^0.5.4",
