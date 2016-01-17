@@ -6,6 +6,10 @@ Load a minecraft schematic into prismarine world
 
 ## History
 
+### 0.2.5
+
+* some fixes by updating mc-schematic
+
 ### 0.2.4
 
 * add more tests and fix negative iniPos
