@@ -6,6 +6,10 @@ Load a minecraft schematic into prismarine world
 
 ## History
 
+### 0.2.2
+
+* fix iniPos%16!=0 bug
+
 ### 0.2.1
 
 * define skyLight to 15
