@@ -1,6 +1,6 @@
 {
   "name": "schematic-to-world",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Load a minecraft schematic into prismarine world",
   "main": "index.js",
   "scripts": {
