@@ -6,6 +6,10 @@
   "scripts": {
     "test": "mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rom1504/schematic-to-world.git"
+  },
   "author": "Romain Beaumont <romain.rom1@gmail.com>",
   "license": "MIT",
   "dependencies": {
