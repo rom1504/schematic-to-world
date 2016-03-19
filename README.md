@@ -6,6 +6,10 @@ Load a minecraft schematic into prismarine world
 
 ## History
 
+### 1.0.0
+
+* fix dependencies
+
 ### 0.2.5
 
 * some fixes by updating mc-schematic
